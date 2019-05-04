@@ -12,7 +12,7 @@ public class Server {
             socket = serverSocket.accept();
 
             inputStream = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
-            String line = "";
+            String line = " ";
             while (!line.equals("END")){
                 try{
                     line = inputStream.readUTF();
